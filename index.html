@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link type="image/x-icon" href="./resources/icon.svg" rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./resources/logo.svg" alt="Logo">
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#homeid">Home</a></li>
+                <li><a href="#galleryid">Gallery</a></li>
+                <li><a href="#aboutid">About</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-btn" onclick="openMenu()">
+            ☰
+        </div>
+        <span class="close-btn" onclick="closeMenu()"><i class="fa fa-times" aria-hidden="true"></i></span>
+
+    </header>
+
+    <div class="overlay" onclick="closeMenu()"></div>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#homeid" onclick="closeMenu()">Home</a></li>
+            <li><a href="#galleryid" onclick="closeMenu()">Gallery</a></li>
+            <li><a href="#aboutid" onclick="closeMenu()">About</a></li>
+            <li><a href="#footerid" onclick="closeMenu()">Contact</a></li>
+        </ul>
+
+        <div class="bottom-links">
+            <a href="https://instagram.com/hiinishant" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/in/hinishant" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/hiinishant" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+    </div>
+
+
+    <div id="homeid" class="home">
+        <section class="hero">
+            <div class="hero-title">
+                <h1>Helping Students</h1>
+                <p class="tagline">
+                    Build a Better Future
+                </p>
+                <p class="description">
+                    We provide free guidance, mentorship, and support to students facing academic, career, or personal
+                    challenges.
+                </p>
+                <div class="hero-btns">
+                    <button id="btn1">Get Help</button>
+                    <button id="btn2">Become a Volunteer</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2>How We Help</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Academic Help</h3>
+                    <p>
+                        Study guidance, notes,
+                        exam preparation and mentoring.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Mental Support</h3>
+                    <p>
+                        A safe place to share your
+                        problems without judgement.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Career Guidance</h3>
+                    <p>
+                        Resume building,
+                        internship guidance and interviews.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Community</h3>
+                    <p>
+                        Join workshops,
+                        events and student activities.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galleryid" class="why">
+            <h2>Members</h2>
+            <div class="whycard" id="slider">
+                <div class="card imgcard">
+                    <img src="./resources/img1.webp" alt="IMG">
+                    <div class="whylist">
+                        <div class="whylabel">
+                            <p>Name:</p>
+                            <p>Age:</p>
+                            <p>Qualification:</p>
+                            <p>Something:</p>
+                        </div>
+                        <div class="whyans">
+                            <p>Nishant Kumar</p>
+                            <p>19</p>
+                            <p>BS CSDA</p>
+                            <p>Nothing</p>
+                        </div>
+                    </div>
+                    <button class="whybtn">Send Mail</button>
+                </div>
+                <div class="card imgcard">
+                    <img src="./resources/img2.webp" alt="IMG">
+                    <div class="whylist">
+                        <div class="whylabel">
+                            <p>Name:</p>
+                            <p>Age:</p>
+                            <p>Qualification:</p>
+                            <p>Profession:</p>
+                        </div>
+                        <div class="whyans">
+                            <p>Navin Kumar</p>
+                            <p>08</p>
+                            <p>LKG</p>
+                            <p>Gig Worker</p>
+                        </div>
+                    </div>
+                    <button class="whybtn">Send Mail</button>
+                </div>
+                <div class="card imgcard">
+                    <img src="./resources/img3.webp" alt="IMG">
+                    <div class="whylist">
+                        <div class="whylabel">
+                            <p>Name:</p>
+                            <p>Age:</p>
+                            <p>Qualification:</p>
+                            <p>Work:</p>
+                        </div>
+                        <div class="whyans">
+                            <p>Prakhar Shrivastva</p>
+                            <p>09</p>
+                            <p>LKG</p>
+                            <p>Train Robbery</p>
+                        </div>
+                    </div>
+                    <button class="whybtn">Send Mail</button>
+                </div>
+                <div class="card imgcard">
+                    <img src="./resources/img4.webp" alt="IMG">
+                    <div class="whylist">
+                        <div class="whylabel">
+                            <p>Name:</p>
+                            <p>Age:</p>
+                            <p>Qualification:</p>
+                            <p>Something:</p>
+                        </div>
+                        <div class="whyans">
+                            <p>Name Here</p>
+                            <p>18</p>
+                            <p>LKG</p>
+                            <p>Nothing</p>
+                        </div>
+                    </div>
+                    <button class="whybtn">Send Mail</button>
+                </div>
+                <div class="card imgcard">
+                    <img src="./resources/img5.webp" alt="IMG">
+                    <div class="whylist">
+                        <div class="whylabel">
+                            <p>Name:</p>
+                            <p>Age:</p>
+                            <p>Qualification:</p>
+                            <p>Something:</p>
+                        </div>
+                        <div class="whyans">
+                            <p>Name Here</p>
+                            <p>18</p>
+                            <p>LKG</p>
+                            <p>Nothing</p>
+                        </div>
+                    </div>
+                    <button class="whybtn">Send Mail</button>
+                </div>
+                <div class="card imgcard">
+                    <img src="./resources/img6.webp" alt="IMG">
+                    <div class="whylist">
+                        <div class="whylabel">
+                            <p>Name:</p>
+                            <p>Age:</p>
+                            <p>Qualification:</p>
+                            <p>Something:</p>
+                        </div>
+                        <div class="whyans">
+                            <p>Name Here</p>
+                            <p>18</p>
+                            <p>LKG</p>
+                            <p>Nothing</p>
+                        </div>
+                    </div>
+                    <button class="whybtn">Send Mail</button>
+                </div>
+            </div>
+            <p id="whyus">Why Choose Us?</p>
+            <div class="whyreason">
+                <ul>
+                    <li>100% Free Support</li>
+                    <li>Friendly Volunteers</li>
+                    <li>Confidential Discussions</li>
+                    <li>Career Guidance</li>
+                    <li>Mental Well-being</li>
+                    <li>Student-First Approach</li>
+
+                </ul>
+            </div>
+
+        </section>
+        <section class="stats">
+            <div class="stat">
+                <h1 id="students">0</h1>
+                <p>Students Helped</p>
+            </div>
+            <div class="stat">
+                <h1 id="volunteers">0</h1>
+                <p>Volunteers</p>
+            </div>
+            <div class="stat">
+                <h1 id="events">0</h1>
+                <p>Events</p>
+
+            </div>
+        </section>
+
+        <section id="aboutid" class="cta">
+            <h2>
+                Every Student Deserves Someone Who Listens.
+            </h2>
+            <p>
+                Join us in building a stronger,
+                kinder and more supportive community.
+            </p>
+        </section>
+        <section class="message-section">
+            <h2>What We Offer</h2>
+            <div class="marquee">
+                <div class="marquee-content">
+
+                    <div class="msg-card">Academic Guidance</div>
+                    <div class="msg-card">Career Mentorship</div>
+                    <div class="msg-card">Mental Well-being</div>
+                    <div class="msg-card">Friendly Volunteers</div>
+                    <div class="msg-card">Confidential Discussions</div>
+                    <div class="msg-card">Inclusive Community</div>
+                    <div class="msg-card">Study Resources</div>
+                    <div class="msg-card">Scholarship Guidance</div>
+
+                    <div class="msg-card">Academic Guidance</div>
+                    <div class="msg-card">Career Mentorship</div>
+                    <div class="msg-card">Mental Well-being</div>
+                    <div class="msg-card">Friendly Volunteers</div>
+                    <div class="msg-card">Confidential Discussions</div>
+                    <div class="msg-card">Inclusive Community</div>
+                    <div class="msg-card">Study Resources</div>
+                    <div class="msg-card">Scholarship Guidance</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <form id="formid" class="formcard" action="https://formsubmit.co/oneate2006@gmail.com" method="POST"
+        enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="New Help Request">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="http://127.0.0.1:3000/">
+        <div class="formhead">
+            <p>Mail</p>
+        </div>
+        <div id="helpsection">
+            <label for="name">From</label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" placeholder="Enter Subject" required>
+            <label for="body">Body</label>
+            <textarea id="formbody" name="message" placeholder="Describe your problem..." required></textarea>
+        </div>
+        <div>
+            <button type="button" id="fromclosebtn">Close</button>
+            <button type="submit">Send</button>
+        </div>
+    </form>
+
+    <form id="volunteerForm" class="formcard" action="https://formsubmit.co/oneate2006@gmail.com" method="POST"
+        enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="New Help Request">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="http://127.0.0.1:3000/">
+        <div class="formhead">
+            <p>Become a Volunteer</p>
+        </div>
+        <div id="helpsection">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+
+            <label>Age</label>
+            <input type="number" name="age" min="16" placeholder="Enter Your Age" required>
+
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="Enter Phone Number" required>
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter Your Email" required>
+
+            <label>Why do you want to volunteer?</label>
+            <textarea id="formbody" name="reason" placeholder="Tell us a little about yourself..."></textarea>
+        </div>
+        <div>
+            <button type="button" id="volunteerClose">
+                Close
+            </button>
+            <button type="submit">
+                Join Our Team
+            </button>
+        </div>
+    </form>
+
+    <form id="mentorForm" class="formcard" action="https://formsubmit.co/nishant999005@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Help Request">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="http://127.0.0.1:3000/">
+        <div class="formhead">
+            <p>Contact Mentor</p>
+        </div>
+        <div id="helpsection">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <label>Age</label>
+            <input type="number" name="age" placeholder="Enter your age" required>
+            <label>Your Message</label>
+            <textarea id="formbody" name="message" placeholder="Write your message..." required></textarea>
+        </div>
+        <div>
+            <button type="button" id="mentorClose">
+                Close
+            </button>
+            <button type="submit">
+                Send
+            </button>
+        </div>
+    </form>
+
+
+    <div id="footerid" class="footer">
+        <p>&copy; 2026 Our Website. All rights reserved.</p>
+        <p>Contact us at nishant999005@gmail.com</p>
+        <p>Follow us on social media!</p>
+        <span><a href="https://linkedin.com/in/hinishant" target="_blank">LinkedIn</a> | <a
+                href="https://github.com/hiinishant" target="_blank">GitHub</a> | <a
+                href="https://instagram.com/hiinishant" target="_blank">Instagram</a></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
